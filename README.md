@@ -1,0 +1,1 @@
+# wcsc-discord-bot
