@@ -5,7 +5,8 @@ const path = require('node:path')
 
 const token = process.env.TOKEN
 const clientId = process.env.CLIENT_ID
-const guildId = process.env.PRODUCTION ? process.env.GUILD_ID_PROD : process.env.GUILD_ID_DEV
+const guildId =
+  process.env.NODE_ENV === 'production' ? process.env.GUILD_ID_PROD : process.env.GUILD_ID_DEV
 
 const commands = []
 // Grab all the command folders from the commands directory you created earlier
