@@ -4,8 +4,9 @@
   "description": "A bot for the WCSC Discord server",
   "main": "index.js",
   "scripts": {
-    "dev": "node index.js",
-    "start": "NODE_ENV=production node index.js",
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "deploy-commands": "NODE_ENV=production node deploy-commands.js",
     "lint": "eslint --ext .js --ignore-path .gitignore ."
   },
   "dependencies": {
