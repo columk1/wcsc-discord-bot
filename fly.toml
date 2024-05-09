@@ -1,0 +1,15 @@
+# fly.toml app configuration file generated for wcsc-discord-bot-twilight-cloud-2729 on 2024-05-08T14:32:35-07:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = 'wcsc-discord-bot-twilight-cloud-2729'
+primary_region = 'sea'
+
+[build]
+
+[[services]]
+  internal_port = 3000
+  protocol = "tcp"
+  auto_start_machines = false
+  auto_stop_machines = false  # prevent automatic suspension
