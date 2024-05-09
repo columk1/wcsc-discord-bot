@@ -1,7 +1,7 @@
 const { SlashCommandBuilder } = require('discord.js')
 const cheerio = require('cheerio')
 require('dotenv').config()
-const { getDynamicHtml } = require('./lib/helpers/scraper')
+const { getDynamicHtml } = require('../../lib/helpers/scraper')
 
 async function scrapeWoodsideData() {
   const html = await getDynamicHtml(process.env.ZAKOMETER_URL)
